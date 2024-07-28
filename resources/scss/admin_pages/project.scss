@@ -1,0 +1,159 @@
+.contain_admin{
+    .historique_statistique{
+        .sections{
+            display: flex;
+            flex-direction: column;
+            .card {
+                position: relative;
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                background-color: var(--bg1);
+                margin: 10px;
+                .buttons{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: translateX(120%);
+                    transition: 0.4s ease;
+                    display: flex;
+                    flex-direction: row;
+                    .button{
+                        background-color: var(--action_color);
+                        border-radius: 10px;
+                        color: var(--title1);
+                        padding: 7px 11px;
+                        margin:0 10px;
+                        transition: .4s ease;
+                    }
+                    .button:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                .bg {
+                    height: 100%;
+                    width: 100%;
+                    background: var(--bg2);
+                    padding: 10px;
+                    .title{
+                        color: var(--action_color);
+                        font-size: 18px;
+                    }
+                    .discription{
+                        color: var(--title2);
+                        font-size: 16px;
+                        margin-top: 10px;
+                    }
+                    .emptySection{
+                        color: var(--title2);
+                        font-size: 16px;
+                        width: 100%;
+                        text-align: center;
+                    }
+                  }
+              }
+            .card:hover .buttons{
+                transform: translateX(0);
+            }
+        }
+        .images{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .card{
+                margin: 10px;
+                border-radius: 10px;
+                width: 200px;
+                height: 200px;
+                position: relative;
+                transition: .4s ease;
+                img{
+                  width: 200px;
+                  height: 200px;
+                  border-radius: 10px;
+                  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                }
+                .managment{
+                  position: absolute;
+                  left: 0;
+                  top: 50px;
+                  width: 100%;
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  i{
+                    border-radius: 50%;
+                    background-color: var(--bg1);
+                    color: var(--title1);
+                    padding: 10px;
+                    margin: 5px;
+                    cursor: pointer;
+                    transition: .4s ease;
+                  }
+                  .fa-trash:hover{
+                    background-color: rgb(205, 41, 41);
+                  }
+
+                }
+            }
+            .card:hover{
+              transform: scale(1.1);
+            }
+            .card:hover .managment{
+              display: flex;
+            }
+        }
+    }
+    .text_editor_vue{
+        .ck.ck-editor {
+          position: relative;
+          .ck-editor__top{
+            background-color: transparent;
+            color: var(--title1);
+          }
+          .ck-reset_all{
+            .ck.ck-toolbar{
+              background-color: transparent;
+            }
+          }
+          .ck-reset_all :not(.ck-reset_all-excluded *), .ck.ck-reset_all{
+            color: var(--title1);
+          }
+          .ck-editor__editable_inline{
+              height: 300px;
+              overflow-y: auto;
+              color: #000;
+          }
+        }
+        .ck.ck-button{
+          background-color: var(--bg2);
+        }
+        .ck.ck-button.ck-on{
+          background-color: var(--bg1);
+        }
+        .ck.ck-button:not(.ck-disabled):hover, a.ck.ck-button:not(.ck-disabled):hover{
+          background-color: var(--action_color);
+        }
+        .ck.ck-editor__main>.ck-editor__editable{
+          background-color: var(--bg1);
+          color: var(--title1);
+        }
+        ol{
+          margin-left: 20px;
+        }
+        h2{
+          font-size: 30px;
+        }
+        h3{
+          font-size: 25px;
+        }
+        h4{
+          font-size: 20px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+}
