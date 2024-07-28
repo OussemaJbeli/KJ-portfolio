@@ -1,0 +1,353 @@
+.contain_admin{
+    .historique_statistique{
+        .button_acount{
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: var(--action_color) !important;
+            color: #fff !important;
+        }
+    }
+    .table_frame{
+        .table_edit{
+
+        }
+    }
+    .limit_frame{
+        textarea{
+            width: 100%;
+            height: 100px;
+            max-height: 200px;
+            overflow-y: auto;
+            background-color: transparent !important;
+            border: 1.5px solid var(--action_color) !important;
+            border-radius: 10px;
+            color: var(--title1) !important;
+        }
+        .file_shoser{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            button{
+                padding: 10px 20px;
+                color: #fff !important;
+                background-color: var(--action_color) !important;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+.text_tools_data_show{
+    .frame{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 5px 10px;
+        .container{
+            width: 100%;
+            position: relative;
+            form{
+                width: 100%;
+                color: var(--title1);
+                header{
+                    border-radius: 10px;
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                    background-color: var(--bg2);
+                    padding: 10px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    .inputs{
+                        color: var(--title1);
+                        .input{
+                            width: 100%;
+                            font-size: 13px;
+                            border-radius: 10px;
+                            background-color: var(--bg1);
+                            padding: 10px 15px;
+                        }
+                    }
+                    .buttons{
+                    display: flex;
+                    flex-direction: row;
+                    .register_button{
+                            border-radius: 10px;
+                            padding: 5px 10px;
+                            border: 1.5px solid var(--action_color);
+                            background-color: var(--bg1);
+                            color: var(--title1);
+                            margin: 5px;
+                            cursor: pointer;
+                    }
+                    .register_button:hover{
+                        background-color: var(--action_color);
+                        color: #fff;
+                    }
+                    }
+                }
+                body{
+                    border-radius: 10px;
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                    background-color: var(--bg2);
+                    padding: 10px;
+                    margin-top: 15px;
+                    width: 100%;
+                    position: relative;
+                    .text_editor_vue{
+                      .ck.ck-editor {
+                        position: relative;
+                        .ck-editor__top{
+                          background-color: transparent;
+                          color: var(--title1);
+                        }
+                        .ck-reset_all{
+                          .ck.ck-toolbar{
+                            background-color: transparent;
+                          }
+                        }
+                        .ck-reset_all :not(.ck-reset_all-excluded *), .ck.ck-reset_all{
+                          color: var(--title1);
+                        }
+                        .ck-editor__editable_inline{
+                            height: 600px;
+                            overflow-y: auto;
+                            color: #000;
+                        }
+                      }
+                      .ck.ck-button{
+                        background-color: var(--bg2);
+                      }
+                      .ck.ck-button.ck-on{
+                        background-color: var(--bg1);
+                      }
+                      .ck.ck-button:not(.ck-disabled):hover, a.ck.ck-button:not(.ck-disabled):hover{
+                        background-color: var(--action_color);
+                      }
+                      .ck.ck-editor__main>.ck-editor__editable{
+                        background-color: var(--bg1);
+                        color: var(--title1);
+                      }
+                      ol{
+                        margin-left: 20px;
+                      }
+                      h2{
+                        font-size: 30px;
+                      }
+                      h3{
+                        font-size: 25px;
+                      }
+                      h4{
+                        font-size: 20px;
+                      }
+                      p{
+                        font-size: 16px;
+                      }
+                    }
+                    .invers_direction{
+                      .ck.ck-editor__editable_inline[dir=ltr]{
+                        text-align: end;
+                      }
+                    }
+                    .isAssistantTyping{
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      .pencil {
+                        position: absolute;
+                        top: 200px;
+                        display: block;
+                        width: 10em;
+                        height: 10em;
+                      }
+                      
+                      .pencil__body1,
+                      .pencil__body2,
+                      .pencil__body3,
+                      .pencil__eraser,
+                      .pencil__eraser-skew,
+                      .pencil__point,
+                      .pencil__rotate,
+                      .pencil__stroke {
+                        animation-duration: 3s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                      }
+                      
+                      .pencil__body1,
+                      .pencil__body2,
+                      .pencil__body3 {
+                        transform: rotate(-90deg);
+                      }
+                      
+                      .pencil__body1 {
+                        animation-name: pencilBody1;
+                      }
+                      
+                      .pencil__body2 {
+                        animation-name: pencilBody2;
+                      }
+                      
+                      .pencil__body3 {
+                        animation-name: pencilBody3;
+                      }
+                      
+                      .pencil__eraser {
+                        animation-name: pencilEraser;
+                        transform: rotate(-90deg) translate(49px,0);
+                      }
+                      
+                      .pencil__eraser-skew {
+                        animation-name: pencilEraserSkew;
+                        animation-timing-function: ease-in-out;
+                      }
+                      
+                      .pencil__point {
+                        animation-name: pencilPoint;
+                        transform: rotate(-90deg) translate(49px,-30px);
+                      }
+                      
+                      .pencil__rotate {
+                        animation-name: pencilRotate;
+                      }
+                      
+                      .pencil__stroke {
+                        animation-name: pencilStroke;
+                        transform: translate(100px,100px) rotate(-113deg);
+                      }
+                      
+                      /* Animations */
+                      @keyframes pencilBody1 {
+                        from,
+                        to {
+                          stroke-dashoffset: 351.86;
+                          transform: rotate(-90deg);
+                        }
+                      
+                        50% {
+                          stroke-dashoffset: 150.8;
+                       /* 3/8 of diameter */
+                          transform: rotate(-225deg);
+                        }
+                      }
+                      
+                      @keyframes pencilBody2 {
+                        from,
+                        to {
+                          stroke-dashoffset: 406.84;
+                          transform: rotate(-90deg);
+                        }
+                      
+                        50% {
+                          stroke-dashoffset: 174.36;
+                          transform: rotate(-225deg);
+                        }
+                      }
+                      
+                      @keyframes pencilBody3 {
+                        from,
+                        to {
+                          stroke-dashoffset: 296.88;
+                          transform: rotate(-90deg);
+                        }
+                      
+                        50% {
+                          stroke-dashoffset: 127.23;
+                          transform: rotate(-225deg);
+                        }
+                      }
+                      
+                      @keyframes pencilEraser {
+                        from,
+                        to {
+                          transform: rotate(-45deg) translate(49px,0);
+                        }
+                      
+                        50% {
+                          transform: rotate(0deg) translate(49px,0);
+                        }
+                      }
+                      
+                      @keyframes pencilEraserSkew {
+                        from,
+                        32.5%,
+                        67.5%,
+                        to {
+                          transform: skewX(0);
+                        }
+                      
+                        35%,
+                        65% {
+                          transform: skewX(-4deg);
+                        }
+                      
+                        37.5%, 
+                        62.5% {
+                          transform: skewX(8deg);
+                        }
+                      
+                        40%,
+                        45%,
+                        50%,
+                        55%,
+                        60% {
+                          transform: skewX(-15deg);
+                        }
+                      
+                        42.5%,
+                        47.5%,
+                        52.5%,
+                        57.5% {
+                          transform: skewX(15deg);
+                        }
+                      }
+                      
+                      @keyframes pencilPoint {
+                        from,
+                        to {
+                          transform: rotate(-90deg) translate(49px,-30px);
+                        }
+                      
+                        50% {
+                          transform: rotate(-225deg) translate(49px,-30px);
+                        }
+                      }
+                      
+                      @keyframes pencilRotate {
+                        from {
+                          transform: translate(100px,100px) rotate(0);
+                        }
+                      
+                        to {
+                          transform: translate(100px,100px) rotate(720deg);
+                        }
+                      }
+                      
+                      @keyframes pencilStroke {
+                        from {
+                          stroke-dashoffset: 439.82;
+                          transform: translate(100px,100px) rotate(-113deg);
+                        }
+                      
+                        50% {
+                          stroke-dashoffset: 164.93;
+                          transform: translate(100px,100px) rotate(-113deg);
+                        }
+                      
+                        75%,
+                        to {
+                          stroke-dashoffset: 439.82;
+                          transform: translate(100px,100px) rotate(112deg);
+                        }
+                      }
+                    }
+                }
+            }
+        }
+    }
+}
