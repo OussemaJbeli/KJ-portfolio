@@ -9,7 +9,7 @@
 
   1. Clone the repository
 
-     ```git clone https://github.com/OussemaJbeli/taleb.git```
+     ```git clone https://github.com/OussemaJbeli/KJ-portfolio.git```
 
   2. Install dependencies
 
